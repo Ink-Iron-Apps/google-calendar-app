@@ -23,8 +23,13 @@ export interface GoogleEvent {
 }
 
 export interface Calendar {
-  id: string;
-  summary: string;
+  // Rows come from the Supabase google_calendars table via select('*'),
+  // so the fields are the table's snake_case columns - not the Google
+  // Calendar API shape this interface previously described.
+  calendar_id: string;
+  calendar_name: string;
+  id?: string;
+  summary?: string;
   description?: string;
   primary?: boolean;
   colorId?: string;
