@@ -1,4 +1,3 @@
-import React from 'react';
 import { GoogleEvent } from '../types';
 import './CalendarGrid.css';
 

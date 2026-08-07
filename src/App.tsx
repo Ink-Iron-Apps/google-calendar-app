@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from './lib/supabase';
 import { getGoogleCalendars, createGoogleEvent, updateGoogleEvent, deleteGoogleEvent } from './lib/calendar-api';
 import { useCalendarEvents } from './hooks/useCalendarEvents';
